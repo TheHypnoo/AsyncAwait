@@ -85,14 +85,14 @@ namespace AsyncAwait
             textBoxHoraLocal.Text = "Son les " + DateTime.Now.ToString("HH:mm:ss");
         }
 
-        private void btn_sequencial_Click(object sender, EventArgs e)
+        private async void btn_sequencial_Click(object sender, EventArgs e)
         {
-            listaSequencial();
+            await listaSequencial();
         }
 
-        private void btn_Async_Click(object sender, EventArgs e)
+        private async void btn_Async_Click(object sender, EventArgs e)
         { 
-            listaAsync();
+            await listaAsync();
         }
     }
 }
